@@ -5,7 +5,7 @@
 #ifndef LAB02_OOP_ADMINISTRATIVE_H
 #define LAB02_OOP_ADMINISTRATIVE_H
 #include "Person.h"
-
+using namespace std;
 class Administrative: public Person {
 
 };

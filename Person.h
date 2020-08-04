@@ -8,7 +8,7 @@
 
 #include <string>
 #include <ostream>
-
+using namespace std;
 /**
  * Abstract Class of Person
  */

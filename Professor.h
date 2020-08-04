@@ -5,7 +5,7 @@
 #ifndef LAB02_OOP_PROFESSOR_H
 #define LAB02_OOP_PROFESSOR_H
 #include "Person.h"
-
+using namespace std;
 class Professor: public Person {
 
 };
