@@ -13,7 +13,22 @@ using namespace std;
  * Abstract Class of Person
  */
 class Person {
-
+private:
+    string firstName;
+    string lastName;
+    int documentId;
+public:
+    Person();
+    Person(string,string,int);
+    virtual ~Person();
+    string getFirstName();
+    string getLastName();
+    int getDocumentId();
+    void setFirstName(string);
+    void setLastName(string);
+    void setDocumentId(int);
+    virtual const double salary() = 0;
+    virtual const string toString() = 0;
 };
 
 
