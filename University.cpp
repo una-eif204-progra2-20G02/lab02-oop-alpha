@@ -5,31 +5,24 @@
 #include <sstream>
 #include "University.h"
 University::University(){
-    name = "";
+
 }
-University::University(string);
-University::University(string, Professor, Administrative);
-string University::getName();
-Professor University::getProfessor(){
-    return this->Professor;
+University::University(string name){
+    this->name=name;
 }
+University::University(string name, class Professor prof ,  class Administrative admini){
+    this->name=name;
+    this->Professor=prof;
+   // this->Administrative=admini;
+
+}
+string University::getName(){return this->name;}
+Professor University::getProfessor();
 Administrative University::getAdministrative();
-{
-    return this->Administrative;
-}
-void University::setName(string name);
-{
-    this->name = name;
-}
-void University::setProfessor(Professor Professor){
-    this->Professor = Professor
-}
-void University::setAdministrative(Administrative administrative){
-this->Administrative = administrative
-}
-void University::addProfessor(){
-    professorList->
-}
+void University::setName(string);
+void University::setProfessor(Professor);
+void University::setAdministrative(Administrative);
+void University::addProfessor();
 void University::addAdministrative();
 string University::showProfessorList();
 string University::showAdministrativeList();
