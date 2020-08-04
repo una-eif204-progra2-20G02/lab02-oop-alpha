@@ -12,13 +12,13 @@ Professor::Professor(): Person("ana","lopez", 1) {
 }
 
 Professor::Professor(double salary, double commission) {
-    this->monthlySalary=salary;
-    this->commisionRate=commission;
+    this->_monthlySalary=salary;
+    this->_commisionRate=commission;
 }
 
 Professor::Professor(std::string nombre, std::string apellido, int id, double salary, double commission): Person(nombre,apellido,id) {
-    this->monthlySalary=salary;
-    this->commisionRate=commission;
+    this->_monthlySalary=salary;
+    this->_commisionRate=commission;
 }
 
 Professor::~Professor() {
@@ -26,28 +26,28 @@ Professor::~Professor() {
 }
 
 double Professor::getMonthlySalary() {
-    return monthlySalary;
+    return _monthlySalary;
 }
 
 void Professor::setMonthlySalary(double salary) {
-    monthlySalary=salary;
+    _monthlySalary=salary;
 }
 
 double Professor::getCommissionRate() {
-    return commisionRate;
+    return _commisionRate;
 }
 
 void Professor::setCommissionRate(double commision) {
-    commisionRate=commision;
+    _commisionRate=commision;
 }
 
-double const Professor::salary() {
-    //definir la forma en que se calcula el salario para el profesor
+double Professor::salary() {
+    return (0.7*_monthlySalary+_commisionRate);
 }
 
-std::string const Professor::toString() {
+std::string Professor::toString() {
     stringstream s;
-   s<<"Professor Information: "<< this->getFirstName()<<" "<<this->getLastName()<<endl;
+   s<<Person::toString()<<"\n";
    s<<"Doc Id: "<<this->getDocumentId()<< " , Monthy Salary: "<< this->getMonthlySalary()<<endl;
    return s.str();
 }
