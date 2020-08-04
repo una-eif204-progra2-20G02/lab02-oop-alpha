@@ -16,10 +16,10 @@ public:
     Professor(const std::string, const std::string, int, double,double); //noombre, apellido, Id,Salario, comiision
     virtual ~Professor();
     double getMonthlySalary();
-    double setMonthlySalary(double);
+    void setMonthlySalary(double);
 
     double getCommissionRate();
-    double setCommissionRate(double);
+    void setCommissionRate(double);
     double const salary();
     std::string const toString();
 };

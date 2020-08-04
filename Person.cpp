@@ -13,7 +13,7 @@ Person::Person(string firstName,string lastName,int documentId){
     this->lastName = lastName;
     this->documentId = documentId;
 }
-virtual Person::~Person(){}
+Person::~Person(){}
 string Person::getFirstName(){
     return this->firstName;
 }
