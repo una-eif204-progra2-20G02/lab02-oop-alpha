@@ -35,9 +35,9 @@ int main(int argc, char** argv) {
     _u0->addAdministrative(_a0);
     _u0->addAdministrative(_a1);
 
-    std::cout<<_u0->getListProfessor()->toString()<<"\n";
+    std::cout<<*_u0->getListProfessor()<<"\n";
     std::cout<<"\n"<<"\n";
-    std::cout<<_u0->getListAdministrative()->toString()<<"\n";
+    std::cout<<*_u0->getListAdministrative()<<"\n";
     return 0;
 }
 
