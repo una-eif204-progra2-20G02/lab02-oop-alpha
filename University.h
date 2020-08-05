@@ -11,39 +11,41 @@
  * Created on August 5, 2020, 12:54 PM
  */
 
-#ifndef LAB02_OOP_UNIVERSITY_H
-#define LAB02_OOP_UNIVERSITY_H
-#include "Professor.h"
-#include "Administrative.h"
-#include "Coleccions.h"
-class University {
-public:
-    University();
-    University(const std::string);
-    University(const std::string ,Professor* const, Administrative* const );
-    virtual ~University();
+#ifndef LAB02_OOP_UNIVERSITY_H//Declaraion of Class.
+#define LAB02_OOP_UNIVERSITY_H//Defining Class.
+#include "Professor.h"//Include Professor Class.
+#include "Administrative.h"//Include Administrative Class.
+#include "Coleccions.h"//Include Coleccions.
 
-    std::string getName();
-    void setName(std::string);
+class University {//Declaration of Class.
+public://Public methods.
+    University();//Constructor.
+    University(const std::string);//construtor with parameters.
+    University(const std::string ,Professor* const, Administrative* const );//Constructor with parameters,and declaring pointers.
+    virtual ~University();//Destructors.
 
-    Professor* getProfessor();
-    void setProfessor(Professor* const);
+    std::string getName();//Get Method.
+    void setName(std::string);//Set methods.
 
-    Administrative* getAdministrative();
-    void setAdministrative(Administrative* const);
+    Professor* getProfessor();//Get method of pointer.
+    void setProfessor(Professor* const);//Set method of pointers.
 
-    void addProfessor(Professor*);
-    Coleccions::List<Professor>* getListProfessor();
+    Administrative* getAdministrative();//Get method of pointer.
+    void setAdministrative(Administrative* const);//Set methods of pointers.
 
-    void addAdministrative(Administrative*);
-    Coleccions::List<Administrative>* getListAdministrative();
+    void addProfessor(Professor*);//Adding method.
+    Coleccions::List<Professor>* getListProfessor();//Get method of list pointer.
+
+    void addAdministrative(Administrative*);//Adding method.
+    Coleccions::List<Administrative>* getListAdministrative();//Get method of pointer.
 
 private:
-    std::string _name;
-    Professor* _professor;
-    Administrative* _administrative;
-    Coleccions::List<Professor>* _professorList=new Coleccions::List<Professor>();
-    Coleccions::List<Administrative>* _administrativeList=new Coleccions::List<Administrative>();
+    std::string _name;//Parameter.
+    Professor* _professor;//Parameter.
+    Administrative* _administrative;//Parameter.
+    Coleccions::List<Professor>* _professorList=new Coleccions::List<Professor>();//Declaration of list.
+    Coleccions::List<Administrative>* _administrativeList=new Coleccions::List<Administrative>();//Declaration of list.
+
 
 };
 
