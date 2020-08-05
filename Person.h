@@ -1,35 +1,39 @@
-//
-// Created by Maikol Guzman on 8/2/20.
-//
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 
+/*
+ * File:   Person.h
+ * Author: computer
+ *
+ * Created on August 5, 2020, 10:29 AM
+ */
 #ifndef LAB02_OOP_PERSON_H
 #define LAB02_OOP_PERSON_H
+#include "ObjectBase.h"
+class Person :  public ObjectBase{
 
-
-#include <string>
-#include <ostream>
-using namespace std;
-/**
- * Abstract Class of Person
- */
-class Person {
-private:
-    string firstName;
-    string lastName;
-    int documentId;
 public:
     Person();
-    Person(string,string,int);
+    Person(std::string,std::string,int);
     virtual ~Person();
-    string getFirstName();
-    string getLastName();
+    std::string getFirstName();
+    std::string getLastName();
     int getDocumentId();
-    void setFirstName(string);
-    void setLastName(string);
+    void setFirstName(std::string);
+    void setLastName(std::string);
     void setDocumentId(int);
-    virtual const double salary() = 0;
-    virtual const string toString() = 0;
+    virtual double salary() const = 0;
+    virtual std::string toString()const;
+
+private:
+    std::string _firstName;
+    std::string _lastName;
+    int _documentId;
 };
 
 
 #endif //LAB02_OOP_PERSON_H
+

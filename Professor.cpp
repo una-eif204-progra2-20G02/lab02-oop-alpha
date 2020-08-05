@@ -1,53 +1,70 @@
-//
-// Created by Maikol Guzman on 8/2/20.
-//
-#include <iomanip>
-#include <stdexcept>
-#include <sstream>
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/*
+ * File:   Professor.cpp
+ * Author: computer
+ *
+ * Created on August 5, 2020, 10:53 AM
+ */
+
 #include "Professor.h"
 
-Professor::Professor(): Person("ana","lopez", 1) {
-//constructor preterdimnado
+Professor::Professor():
+        Person(),
+        _monthlySalary(0.0),
+        _commissionRate(0.0)
+{
 
 }
 
-Professor::Professor(double salary, double commission) {
-    this->_monthlySalary=salary;
-    this->_commisionRate=commission;
+Professor::Professor(double monthlySalary, double commissionRate):
+        _monthlySalary(monthlySalary),
+        _commissionRate(commissionRate)
+{
 }
 
-Professor::Professor(std::string nombre, std::string apellido, int id, double salary, double commission): Person(nombre,apellido,id) {
-    this->_monthlySalary=salary;
-    this->_commisionRate=commission;
+Professor::Professor(std::string firstName, std::string lastName, int documentId, double monthlySalary, double commission):
+        Person(firstName,lastName,documentId),
+        _monthlySalary(monthlySalary),
+        _commissionRate(commission)
+{
 }
 
-Professor::~Professor() {
+
+Professor::~Professor(){
 
 }
 
-double Professor::getMonthlySalary() {
+double Professor::getMonthlySalary(){
     return _monthlySalary;
 }
 
-void Professor::setMonthlySalary(double salary) {
-    _monthlySalary=salary;
+void Professor::setMonthlySalary(double monthlySalary) {
+    _monthlySalary=monthlySalary;
 }
 
-double Professor::getCommissionRate() {
-    return _commisionRate;
+double Professor::getCommissionRate(){
+    return _commissionRate;
 }
 
-void Professor::setCommissionRate(double commision) {
-    _commisionRate=commision;
+void Professor::setCommissionRate(double commissionRate) {
+    _commissionRate=commissionRate;
 }
 
-double Professor::salary() {
-    return (0.7*_monthlySalary+_commisionRate);
+double Professor::salary() const {
+    return (0.7*_monthlySalary+_commissionRate);
 }
 
-std::string Professor::toString() {
-    stringstream s;
-   s<<Person::toString()<<"\n";
-   s<<"Doc Id: "<<this->getDocumentId()<< " , Monthy Salary: "<< this->getMonthlySalary()<<endl;
-   return s.str();
+std::string Professor::toString()const{
+    std::stringstream s;
+    s<<Person::toString();
+    s<<"Professor:"<<"\n";
+    s<<"Salary: "<<Professor::salary()<<"\n";
+    s<<"Comissions: "<<_commissionRate<<"\n";
+    s<<"MonthlySalary: "<<_monthlySalary<<"\n";
+    return s.str();
 }
