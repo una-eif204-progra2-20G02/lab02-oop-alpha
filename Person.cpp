@@ -32,3 +32,6 @@ void Person::setLastName(string lastName){
 void Person::setDocumentId(int documentId){
     this->documentId = documentId;
 }
+const double Person::salary(){
+
+}

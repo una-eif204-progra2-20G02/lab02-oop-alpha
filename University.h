@@ -8,27 +8,29 @@
 #include <vector>
 #include "Professor.h"
 #include "Administrative.h"
-#include "Lista.h"
 using namespace std;
 class University {
 private:
     string name;
-    Professor Professor;
-    Administrative Administrative;
-    Lista professorList;
-    Lista administrativeList;
+    Professor professor;
+    Administrative administrative;
+    Professor** professorList;
+    Administrative** administrativeList;
+    int capacidad;
+    int cantidadp;
+    int cantidada;
 public:
     University();
     University(string);
-    University(string, Professor, Administrative);
+    University(string, Professor, Administrative,int);
     string getName();
     Professor getProfessor();
     Administrative getAdministrative();
     void setName(string);
     void setProfessor(Professor);
     void setAdministrative(Administrative);
-    void addProfessor();
-    void addAdministrative();
+    void addProfessor(Professor*);
+    void addAdministrative(Administrative*);
     string showProfessorList();
     string showAdministrativeList();
 };

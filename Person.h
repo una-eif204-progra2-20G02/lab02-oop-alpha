@@ -27,8 +27,8 @@ public:
     void setFirstName(string);
     void setLastName(string);
     void setDocumentId(int);
-    virtual const double salary() = 0;
-    virtual const string toString() = 0;
+    virtual const double salary() ;
+    virtual const string toString();
 };
 
 
