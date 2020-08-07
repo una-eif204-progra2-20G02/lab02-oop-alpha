@@ -61,10 +61,8 @@ double Professor::salary() const {
 
 std::string Professor::toString()const{
     std::stringstream s;
-    s<<Person::toString();
-    s<<"Professor:"<<"\n";
-    s<<"Salary: "<<Professor::salary()<<"\n";
-    s<<"Comissions: "<<_commissionRate<<"\n";
-    s<<"MonthlySalary: "<<_monthlySalary<<"\n";
+    s<<"Professor information:"<<"\n";
+    s<<Person::toString()<<",";
+    s<<"Monthly Salary: "<<Professor::salary()<<"\n";
     return s.str();
 }

@@ -41,6 +41,7 @@ double Administrative::salary()const{//Virtual method in  inheritance form Class
 }
 std::string Administrative::toString()const{//Method string form Class Person.
     stringstream s;//Enter data in a string.
+    s<<"Administrative information: "<<"\n";
     s<<Person::toString();//string form Class Father.
     s<<"Administrativo: "<<"\n";//Data.
     s<<"Salary: "<<Administrative::salary()<<"\n";//Estimation printed in a String from method salary.

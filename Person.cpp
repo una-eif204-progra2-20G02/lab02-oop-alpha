@@ -48,8 +48,7 @@ void Person::setDocumentId(int documentId){
 }
 std::string Person::toString()const{
     std::stringstream s;
-    s<<"Name: "<<_firstName<<"\n";
-    s<<"Last Name: "<<_lastName<<"\n";
-    s<<"Document ID: "<<_documentId<<"\n";
+    s<<"Name: "<<_firstName<<" "<<_lastName<<"\n";
+    s<<"Doc Id: "<<_documentId<<"\n";
     return s.str();
 }

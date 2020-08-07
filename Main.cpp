@@ -26,13 +26,13 @@ int main(int argc, char** argv) {
 
     Administrative* _a0=new Administrative("Jose", "d'Animatea",45678998, 234567);
     Administrative* _a1=new Administrative("Maria", "Magdalena",34356698,655577);
-    //University* _u0=new University();
+    University* _u0=new University();
 
-    //_u0->addProfessor(_p0);
-    //_u0->addProfessor(_p1);
+    _u0->addProfessor(_p0);
+    _u0->addProfessor(_p1);
 
-    //_u0->addAdministrative(_a0);
-    //_u0->addAdministrative(_a1);
+    _u0->addAdministrative(_a0);
+    _u0->addAdministrative(_a1);
 
     std::cout<<"\n"<<"\n";
     return 0;
