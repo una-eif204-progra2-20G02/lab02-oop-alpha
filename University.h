@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 /*
  * File:   University.h
@@ -11,39 +6,45 @@
  * Created on August 5, 2020, 12:54 PM
  */
 
-#ifndef LAB02_OOP_UNIVERSITY_H//Declaraion of Class.
-#define LAB02_OOP_UNIVERSITY_H//Defining Class.
-#include "Professor.h"//Include Professor Class.
-#include "Administrative.h"//Include Administrative Class.
+#ifndef LAB02_OOP_UNIVERSITY_H
+#define LAB02_OOP_UNIVERSITY_H
+#include <vector>
+#include "Professor.h"
+#include "Administrative.h"
 
-class University {//Declaration of Class.
-public://Public methods.
+class Professor;
+class Administrative;
+class University {
+public:
+    University();
+    University(const std::string);
+    University(const std::string ,Professor* const, Administrative* const );
+    virtual ~University();
 
-    University();//Constructor.
-    University(const std::string);//construtor with parameters.
-    University(const std::string ,Professor* const, Administrative* const );//Constructor with parameters,and declaring pointers.
-    virtual ~University();//Destructors.
+    std::string getName();
+    void setName(std::string);
 
-    std::string getName();//Get Method.
-    void setName(std::string);//Set methods.
+    Professor* getProfessor();
+    void setProfessor(Professor* const);
 
-    Professor* getProfessor();//Get method of pointer.
-    void setProfessor(Professor* const);//Set method of pointers.
+    Administrative* getAdministrative();
+    void setAdministrative(Administrative* const);
 
-    Administrative* getAdministrative();//Get method of pointer.
-    void setAdministrative(Administrative* const);//Set methods of pointers.
+    void addProfessor(Professor*);
+    std::vector<Professor> getVectorProfessor();
 
-    void addProfessor(Professor*);//Adding method.
+    void addAdministrative(Administrative*);
+    std::vector<Administrative> getVectorAdministrative();
 
-    void addAdministrative(Administrative*);//Adding method.
-
+    std::string toString();
 private:
-    std::string _name;//Parameter.
-    Professor* _professor;//Parameter.
-    Administrative* _administrative;//Parameter.
-
+    std::string _name;
+    Professor* _professor;
+    Administrative* _administrative;
+    std::vector<Professor> _vP;
+    std::vector<Administrative> _vA;
 
 };
 
-#endif /* LAB02_OOP_UNIVERSITY_H */
+#endif /* UNIVERSITY_H */
 
