@@ -55,16 +55,8 @@ void University::setAdministrative(Administrative* const administrative){
 }
 
 void University::addProfessor(Professor* professor){
-    _professorList->agregar(professor);
 }
 
-Coleccions::List<Professor>* University::getListProfessor(){
-    return _professorList;
-}
 void University::addAdministrative(Administrative* administrative){
-    _administrativeList->agregar(administrative);
 }
 
-Coleccions::List<Administrative>* University::getListAdministrative(){
-    return _administrativeList;
-}

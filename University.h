@@ -15,10 +15,10 @@
 #define LAB02_OOP_UNIVERSITY_H//Defining Class.
 #include "Professor.h"//Include Professor Class.
 #include "Administrative.h"//Include Administrative Class.
-#include "Coleccions.h"//Include Coleccions.
 
 class University {//Declaration of Class.
 public://Public methods.
+
     University();//Constructor.
     University(const std::string);//construtor with parameters.
     University(const std::string ,Professor* const, Administrative* const );//Constructor with parameters,and declaring pointers.
@@ -34,17 +34,13 @@ public://Public methods.
     void setAdministrative(Administrative* const);//Set methods of pointers.
 
     void addProfessor(Professor*);//Adding method.
-    Coleccions::List<Professor>* getListProfessor();//Get method of list pointer.
 
     void addAdministrative(Administrative*);//Adding method.
-    Coleccions::List<Administrative>* getListAdministrative();//Get method of pointer.
 
 private:
     std::string _name;//Parameter.
     Professor* _professor;//Parameter.
     Administrative* _administrative;//Parameter.
-    Coleccions::List<Professor>* _professorList=new Coleccions::List<Professor>();//Declaration of list.
-    Coleccions::List<Administrative>* _administrativeList=new Coleccions::List<Administrative>();//Declaration of list.
 
 
 };

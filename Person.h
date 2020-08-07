@@ -12,8 +12,10 @@
  */
 #ifndef LAB02_OOP_PERSON_H
 #define LAB02_OOP_PERSON_H
-#include "ObjectBase.h"
-class Person :  public ObjectBase{
+#include <iostream>
+#include <sstream>
+using namespace std;
+class Person{
 
 public:
     Person();
