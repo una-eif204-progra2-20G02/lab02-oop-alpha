@@ -11,32 +11,32 @@
  * Created on August 5, 2020, 10:53 AM
  */
 
-#ifndef LAB02_OOP_PROFESSOR_H
-#define LAB02_OOP_PROFESSOR_H
-#include "Person.h"
+#ifndef LAB02_OOP_PROFESSOR_H//Declaration of class.
+#define LAB02_OOP_PROFESSOR_H//Define class.
+#include "Person.h"//Declaration of including file.
 
-class Professor: public Person {
+class Professor: public Person {//Inheritance of Class Person, and declaration of Class Professor.
 
-public:
-    Professor();
-    Professor(double,double);
-    Professor(const std::string, const std::string, int, double,double);
-    virtual ~Professor();
+public://Public methods.
+    Professor();//Default constructor.
+    Professor(double,double);//Constructor with parameters.
+    Professor(const std::string, const std::string, int, double,double);//Constructors including the Class Father Person.
+    virtual ~Professor();//Destructor
 
-    double getMonthlySalary();
-    void setMonthlySalary(double);
+    double getMonthlySalary();//Get method from a Class Administrative.
+    void setMonthlySalary(double);//Set method from a Class Administrative.
 
-    double getCommissionRate();
-    void setCommissionRate(double);
+    double getCommissionRate();//Get method from a Class Administrative.
+    void setCommissionRate(double);//Set method from a Class Administrative.
 
-    virtual double salary()const;
+    virtual double salary()const;//Virtual inheritance method form Class Person.
 
-    virtual std::string toString()const;
+    virtual std::string toString()const;//Virtual method in inheritance of Class Person.
 
-private:
-    double _monthlySalary;
-    double _commissionRate;
+private://Private attributes
+    double _monthlySalary;//Class attribute.
+    double _commissionRate;//Class attribute.
 };
 
-#endif //LAB02_OOP_PROFESSOR_H
+#endif //LAB02_OOP_PROFESSOR_H //End of class.
 

@@ -6,45 +6,45 @@
  * Created on August 5, 2020, 12:54 PM
  */
 
-#ifndef LAB02_OOP_UNIVERSITY_H
-#define LAB02_OOP_UNIVERSITY_H
-#include <vector>
-#include "Professor.h"
-#include "Administrative.h"
+#ifndef LAB02_OOP_UNIVERSITY_H//Declaration of Class.
+#define LAB02_OOP_UNIVERSITY_H//Define of Class.
+#include <vector>//Includes library.
+#include "Professor.h"//Declaration of including Class.
+#include "Administrative.h"//Declaration of including Class.
 
-class Professor;
-class Administrative;
-class University {
-public:
-    University();
-    University(const std::string);
-    University(const std::string ,Professor* const, Administrative* const );
-    virtual ~University();
+class Professor;//Declaration of class Professor for specification reasons.
+class Administrative;//Declaration of class Administrative for specification reasons.
+class University {//Declaration of class University.
+public://Public methods.
+    University();//Constructor of Class default.
+    University(const std::string);//Constructors with parameters.
+    University(const std::string ,Professor* const, Administrative* const );//Constructors including the Class Professor and Administrative.
+    virtual ~University();//Destructor.
 
-    std::string getName();
-    void setName(std::string);
+    std::string getName();//Get method.
+    void setName(std::string);//Set method.
 
-    Professor* getProfessor();
-    void setProfessor(Professor* const);
+    Professor* getProfessor();//Get method.
+    void setProfessor(Professor* const);//Set method.
 
-    Administrative* getAdministrative();
-    void setAdministrative(Administrative* const);
+    Administrative* getAdministrative();//Get method.
+    void setAdministrative(Administrative* const);//Set method.
 
-    void addProfessor(Professor*);
-    std::vector<Professor> getVectorProfessor();
+    void addProfessor(Professor*);//Void method of class University.
+    std::vector<Professor> getVectorProfessor();//Get method.
 
-    void addAdministrative(Administrative*);
-    std::vector<Administrative> getVectorAdministrative();
+    void addAdministrative(Administrative*);//Void method from class University.
+    std::vector<Administrative> getVectorAdministrative();//Get method.
 
-    std::string toString();
-private:
-    std::string _name;
-    Professor* _professor;
-    Administrative* _administrative;
-    std::vector<Professor> _vP;
-    std::vector<Administrative> _vA;
+    std::string toString();//String method from class University.
+private://Private parameters.
+    std::string _name;//Parameter of Class.
+    Professor* _professor;//Parameter of Class.
+    Administrative* _administrative;//Parameter of Class.
+    std::vector<Professor> _vP;//Parameter of Class.
+    std::vector<Administrative> _vA;//Parameter of Class.
 
 };
 
-#endif /* UNIVERSITY_H */
+#endif /* UNIVERSITY_H */ //End of class.
 
