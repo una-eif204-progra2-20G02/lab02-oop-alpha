@@ -1,14 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
+/* To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 
-/*
- * File:   Person.h
- * Author: computer
- *
- * Created on August 5, 2020, 10:29 AM
+/* =====================================================================================
+*
+* Description:  Person.h
+* File:    Person.h
+*
+* Created on August 5, 2020, 10:29 AM
+* Author:  Alpha Group
+* Organization:  Universidad Nacional (UNA)
+*
+========================================================================================
  */
 #ifndef LAB02_OOP_PERSON_H//Declaration of class.
 #define LAB02_OOP_PERSON_H//Define class.

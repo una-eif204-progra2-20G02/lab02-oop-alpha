@@ -1,9 +1,19 @@
-
 /*
- * File:   University.h
- * Author: computer
- *
- * Created on August 5, 2020, 12:54 PM
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/* =====================================================================================
+*
+* Description: University.h
+* File:   University.h
+*
+* Created on August 5, 2020, 12:54 PM
+* Author:  Alpha Group
+* Organization:  Universidad Nacional (UNA)
+*
+========================================================================================
  */
 
 #ifndef LAB02_OOP_UNIVERSITY_H//Declaration of Class.
@@ -41,8 +51,8 @@ private://Private parameters.
     std::string _name;//Parameter of Class.
     Professor* _professor;//Parameter of Class.
     Administrative* _administrative;//Parameter of Class.
-    std::vector<Professor> _vP;//Parameter of Class.
-    std::vector<Administrative> _vA;//Parameter of Class.
+    std::vector<Professor> _professorList;//Parameter of Class.
+    std::vector<Administrative> _administrativeList;//Parameter of Class.
 
 };
 

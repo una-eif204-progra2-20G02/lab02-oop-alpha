@@ -1,16 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
+/* To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 
-/*
- * File:   Administrative.h
- * Author: computer
- *
- * Created on August 5, 2020, 11:25 AM
+/* =====================================================================================
+*
+* Description:   Administrative.h
+* File:    Administrative.h
+*
+* Created on August 5, 2020, 11:25 AM
+* Author:  Alpha Group
+* Organization:  Universidad Nacional (UNA)
+*
+========================================================================================
  */
-
 #ifndef ADMINISTRATIVE_H//Declaration of Class.
 #define ADMINISTRATIVE_H//Define of Class.
 #include "Person.h"//Declaration of including Class.

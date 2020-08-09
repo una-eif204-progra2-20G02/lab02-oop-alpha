@@ -1,16 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
+/* To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 
-/*
- * File:   Person.cpp
- * Author: computer
- *
- * Created on August 5, 2020, 10:29 AM
+/* =====================================================================================
+*
+* Description:  Person.cpp
+* File:    Person.cpp
+*
+* Created on August 5, 2020, 10:29 AM
+* Author:  Alpha Group
+* Organization:  Universidad Nacional (UNA)
+*
+========================================================================================
  */
-
 
 #include "Person.h"//Includes header file.
 Person::Person()://Default constructor.

@@ -4,11 +4,16 @@
  * and open the template in the editor.
  */
 
-/*
- * File:   Professor.h
- * Author: computer
- *
- * Created on August 5, 2020, 10:53 AM
+/* =====================================================================================
+*
+* Description: Professor.h
+* File:   Professor.h
+*
+* Created on August 5, 2020, 10:53 AM
+* Author:  Alpha Group
+* Organization:  Universidad Nacional (UNA)
+*
+========================================================================================
  */
 
 #ifndef LAB02_OOP_PROFESSOR_H//Declaration of class.

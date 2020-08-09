@@ -1,16 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
+/* To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 
-/*
- * File:   Administrative.cpp
- * Author: computer
- *
- * Created on August 5, 2020, 11:25 AM
+/* =====================================================================================
+*
+* Description:   Administrative.cpp
+* File:    Administrative.cpp
+*
+* Created on August 5, 2020, 11:25 AM
+* Author:  Alpha Group
+* Organization:  Universidad Nacional (UNA)
+*
+========================================================================================
  */
-
 #include "Administrative.h"//Includes header file.
 
 Administrative::Administrative():Person(), _monthlySalary(0.0) {//Constructor in inheritance

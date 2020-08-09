@@ -4,13 +4,17 @@
  * and open the template in the editor.
  */
 
-/*
- * File:   University.cpp
- * Author: computer
- *
- * Created on August 5, 2020, 12:54 PM
+/* =====================================================================================
+*
+* Description:  University.cpp
+* File:   University.cpp
+*
+* Created on August 5, 2020, 12:54 PM
+* Author:  Alpha Group
+* Organization:  Universidad Nacional (UNA)
+*
+========================================================================================
  */
-
 #include "University.h"
 
 University::University()://Default constructor
@@ -57,17 +61,17 @@ void University::setAdministrative(Administrative* const administrative){//Metho
 }
 
 void University::addProfessor(Professor* professor){//Void method from class University
-    _vP.push_back(*professor);//Adds a new Professor in the collection.
+    _professorList.push_back(*professor);//Adds a new Professor in the collection.
 }
 std::vector<Professor> University::getVectorProfessor(){//Method get.
-    return _vP;//return parameter.
+    return  _professorList;//return parameter.
 }
 void University::addAdministrative(Administrative* administrative){//Void method from class University
-    _vA.push_back(*administrative);//Adds a new Administrative in the collection.
+    _administrativeList.push_back(*administrative);//Adds a new Administrative in the collection.
 }
 
 std::vector<Administrative> University::getVectorAdministrative() {//Method get.
-    return _vA;//return parameter.
+    return _administrativeList;//return parameter.
 }
 
 std::string University::toString(){//String method from class University.
@@ -75,14 +79,14 @@ std::string University::toString(){//String method from class University.
     s<<"Nombre de la Universidad: "<<std::endl<<std::endl;//Data.
     {
 
-        for(int i=0;i<_vP.size();i++){//For type cycle from 0 to Persson's size.
-            s<<_vP.data()[i].toString()<<"\n";//Shows data contained in the collection.
+        for(int i=0;i< _professorList.size();i++){//For type cycle from 0 to Persson's size.
+            s<< _professorList.data()[i].toString()<<"\n";//Shows data contained in the collection.
 
         }
 
 
-        for(int i=0;i<_vA.size();i++){//For type cycle from 0 to Administrative's size.
-            s<<_vA.data()[i].toString()<<"\n";//Shows data contained in the collection.
+        for(int i=0;i<_administrativeList.size();i++){//For type cycle from 0 to Administrative's size.
+            s<<_administrativeList.data()[i].toString()<<"\n";//Shows data contained in the collection.
         }
     }
     return s.str();//Return of string.

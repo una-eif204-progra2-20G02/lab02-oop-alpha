@@ -4,20 +4,21 @@
  * and open the template in the editor.
  */
 
-/*
- * File:   University.cpp
- * Author: computer
- *
- * Created on August 5, 2020, 12:54 PM
+/* =====================================================================================
+*
+* Description:  main .cpp
+* File:   University.cpp
+*
+* Created on August 5, 2020, 12:54 PM
+* Author:  Alpha Group
+* Organization:  Universidad Nacional (UNA)
+*
+========================================================================================
  */
-
-
 #include <iostream>//open library
 #include "University.h"//call class
 
-/*
- *
- */
+
 int main(int argc, char** argv) {//open main
 
     Professor *_p0 = new Professor("Steve", "Madrigal", 12345694, 189000, 568875);//Data to point class

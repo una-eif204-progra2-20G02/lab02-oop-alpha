@@ -4,13 +4,17 @@
  * and open the template in the editor.
  */
 
-/*
- * File:   Professor.cpp
- * Author: computer
- *
- * Created on August 5, 2020, 10:53 AM
+/* =====================================================================================
+*
+* Description:  Professor.cpp
+* File:    Professor.cpp
+*
+* Created on August 5, 2020, 10:53 AM
+* Author:  Alpha Group
+* Organization:  Universidad Nacional (UNA)
+*
+========================================================================================
  */
-
 #include "Professor.h"//Includes header file.
 
 Professor::Professor()://Constructor in inheritance.
